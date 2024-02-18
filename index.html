@@ -7,7 +7,9 @@
     <title>Christopher Cusack</title>
     <script src="js/app.js" defer type="module"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 
 <body>
@@ -70,7 +72,7 @@
         <div class="home-sci">
             <a href="https://www.linkedin.com/in/christophercusack/" target="_blank"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/christopherecusack" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.instagram.com/chrisecusack/" target="_blank"><i class='bx bxl-instagram'></i></a>
             <span class="animate" style="--i:6;"></span>
         </div>
 
@@ -275,20 +277,21 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-        <form action="#">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="32308aad-126f-4459-baa8-996839185d38">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Name" required>
+                    <input name="name" type="text" placeholder="Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="email" placeholder="Email Address" required>
+                    <input name="email" type="email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:2;"></span>
             </div>
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                 <span class="focus-t"></span>
                 <span class="animate scroll" style="--i:3;"></span>
             </div>
@@ -297,7 +300,8 @@
                 <button class="btn">Submit</button>
                 <span class="animate scroll" style="--i:4;"></span>
             </div>
-
+            <div id="result"></div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         </form>
     </section>
 

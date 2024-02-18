@@ -1,5 +1,6 @@
 import { $ } from './dom.js';
 import { init } from './audio.js';
+import * as Contact from './contact.js'
 
 const sections = $('section');
 const links = $('header nav a');
@@ -11,6 +12,7 @@ const header = $('header');
 const footer = $('footer');
 
 init();
+Contact.init();
 
 copyyear.innerText = new Date().getFullYear();
 years.innerText = new Date().getFullYear() - 2002;
