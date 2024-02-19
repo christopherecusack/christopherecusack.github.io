@@ -91,13 +91,13 @@ body {
     color: var(--main-color);
 }
 
-p a {
+a {
     color: var(--main-color);
     text-decoration: none;
     transition: 0.3s;
 }
 
-p a:hover {
+a:hover {
     color: var(--main-color-hover);
 }
 
@@ -212,6 +212,12 @@ section.about-pg {
     height: 5rem;
 }
 
+.btn-boxp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-box .btn {
     position: relative;
     display: inline-flex;
@@ -226,6 +232,24 @@ section.about-pg {
     font-weight: 400;
     letter-spacing: .1rem;
     color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-boxp .pbtn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: .2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: var(--main-color);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -263,6 +287,7 @@ section.about-pg {
 .btn-box .btn:hover::before {
     width: 100%;
 }
+
 
 .home-sci {
     position: absolute;
@@ -657,6 +682,10 @@ section:nth-child(even) .animate.scroll,
 #result {
     font-size: 1.5rem;
     color: var(--main-color);
+}
+
+#student-sites {
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {
