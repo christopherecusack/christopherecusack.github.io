@@ -115,8 +115,10 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-section.about,
-section.students {
+section.about
+
+/*, section.students  */
+    {
     background-image: url('../img/ani-bg.svg');
     background-repeat: no-repeat;
     background-position: 800px 500px;
@@ -254,6 +256,11 @@ section.about-pg {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+}
+
+.btn-boxp .pbtn.btn-selected {
+    color: var(--bg-color);
+    background-color: var(--main-color);
 }
 
 .btn-boxp .pbtn:first-of-type {
@@ -702,6 +709,7 @@ section:nth-child(even) .animate.scroll,
 
 #student-sites {
     font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 .about-pg .about-content .about-logo {
@@ -714,6 +722,10 @@ section:nth-child(even) .animate.scroll,
 
 .about-pg .about-content p:nth-last-of-type(2) {
     margin-top: 50px;
+}
+
+.pbtn {
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
