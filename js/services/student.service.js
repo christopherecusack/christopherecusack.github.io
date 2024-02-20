@@ -5,16 +5,16 @@ export const pageSize = 5;
 export const getSites = (pager, filter = null) => {
     let currentPage = 1;
 
-    if (students.length <= pageSize) {
-        return {
-            students,
-            pageSize: pageSize < students.length ? students.length : pageSize,
-            displaying: students.length,
-            currentPage: currentPage,
-            numberOfPages: 1,
-            totalRecords: students.length
-        };
-    } else {
+    // if (students.length <= pageSize) {
+    //     return {
+    //         students,
+    //         pageSize: pageSize < students.length ? students.length : pageSize,
+    //         displaying: students.length,
+    //         currentPage: currentPage,
+    //         numberOfPages: 1,
+    //         totalRecords: students.length
+    //     };
+    // } else {
         let { skip } = pager;
 
         if (!!filter) {
@@ -41,5 +41,5 @@ export const getSites = (pager, filter = null) => {
                 totalRecords: students.length
             };
         }
-    }
+    //}
 }
