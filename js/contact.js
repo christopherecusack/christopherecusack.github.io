@@ -1,7 +1,6 @@
 import { $ } from './dom.js';
 
 export const init = () => {
-
     const form = $('#contact-form');
     const result = $('#result');
 
