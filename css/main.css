@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('./equalizer.css');
+@import url('./resets.css');
 
 * {
     margin: 0;
@@ -91,13 +92,13 @@ body {
     color: var(--main-color);
 }
 
-p a {
+a {
     color: var(--main-color);
     text-decoration: none;
     transition: 0.3s;
 }
 
-p a:hover {
+a:hover {
     color: var(--main-color-hover);
 }
 
@@ -212,6 +213,12 @@ section.about-pg {
     height: 5rem;
 }
 
+.btn-boxp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-box .btn {
     position: relative;
     display: inline-flex;
@@ -229,6 +236,39 @@ section.about-pg {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+}
+
+.btn-boxp .pbtn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: .2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-boxp .pbtn:first-of-type {
+    border-radius: 0.8rem 0 0 0.8rem;
+    border-right: 0;
+}
+
+.btn-boxp .pbtn {
+    border-right: 0;
+    border-radius: 0;
+}
+
+.btn-boxp .pbtn:last-of-type {
+    border-radius: 0 0.8rem 0.8rem 0;
+    border: .2rem solid var(--main-color);
 }
 
 .btn-box .btn:hover {
@@ -263,6 +303,7 @@ section.about-pg {
 .btn-box .btn:hover::before {
     width: 100%;
 }
+
 
 .home-sci {
     position: absolute;
@@ -659,6 +700,22 @@ section:nth-child(even) .animate.scroll,
     color: var(--main-color);
 }
 
+#student-sites {
+    font-size: 1.5rem;
+}
+
+.about-pg .about-content .about-logo {
+    margin-top: 50px;
+}
+
+.about-pg .about-content .about-logo img {
+    width: 600px;
+}
+
+.about-pg .about-content p:nth-last-of-type(2) {
+    margin-top: 50px;
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -765,6 +822,20 @@ section:nth-child(even) .animate.scroll,
         pointer-events: none;
         background: var(--bg-color);
         opacity: .6;
+    }
+
+    .about-pg .about-content .about-logo img {
+        width: 80%;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        padding: 0 9%;
+        background-image: url('../img/Chris_Cusack-githubio-mobile.png');
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: right;
     }
 }
 

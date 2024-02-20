@@ -1,6 +1,4 @@
 import { $ } from './dom.js';
-import { init } from './audio.js';
-import * as Contact from './contact.js'
 
 const sections = $('section');
 const links = $('header nav a');
@@ -11,8 +9,10 @@ const years = $('#years');
 const header = $('header');
 const footer = $('footer');
 
-init();
-Contact.init();
+const removeMenu = () => {
+    menuIcon.classList.toggle('bx-x');
+    navBar.classList.toggle('active');
+}
 
 copyyear.innerText = new Date().getFullYear();
 years.innerText = new Date().getFullYear() - 2002;
@@ -27,30 +27,27 @@ links.forEach(link => {
     }
 });
 
-function removeMenu() {
-    menuIcon.classList.toggle('bx-x');
-    navBar.classList.toggle('active');
-}
+if (sections.length !== undefined) {
+    window.onscroll = function () {
+        sections.forEach(section => {
+            let top = window.scrollY;
+            let offset = section.offsetTop - 100;
+            let height = section.offsetHeight;
+            let id = section.getAttribute('id');
 
-window.onscroll = function () {
-    sections.forEach(section => {
-        let top = window.scrollY;
-        let offset = section.offsetTop - 100;
-        let height = section.offsetHeight;
-        let id = section.getAttribute('id');
+            if (top >= offset && top < offset + height) {
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    $(`header nav a[href*=${id}]`).classList.add('active');
+                });
 
-        if (top >= offset && top < offset + height) {
-            links.forEach(link => {
-                link.classList.remove('active');
-                $(`header nav a[href*=${id}]`).classList.add('active');
-            });
+                section.classList.add('show-animate');
+            } else {
+                section.classList.remove('show-animate');
+            }
+        });
 
-            section.classList.add('show-animate');
-        } else {
-            section.classList.remove('show-animate');
-        }
-    });
-
-    header.classList.toggle('sticky', window.scrollY > 100);
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+        header.classList.toggle('sticky', window.scrollY > 100);
+        footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+    }
 }

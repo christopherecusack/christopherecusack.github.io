@@ -6,11 +6,14 @@ export const init = () => {
     const equaliser = $('.equaliser-container');
     const audio = $('#audio');
 
+    if (!audioButton)
+        return;
+
     audioButton.onclick = evt => {
         evt.preventDefault();
         audioButton.classList.toggle('bx-volume-mute');
         equaliser.classList.toggle('hide');
-        
+
         audio.muted = !musicMuted;
         musicMuted = !musicMuted;
     }
