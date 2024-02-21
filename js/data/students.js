@@ -8,11 +8,11 @@ export const students = [
         class: 'WMAD Class of 2024',
         website: 'https://manuelecheandia.com/'
     }, 
-    // {
-    //     name: 'Cserkuti, Catie',
-    //     class: 'WMAD Class of 2024',
-    //     website: 'https://www.linkedin.com/in/catie-cserkuti/'
-    // }, 
+    {
+        name: 'Saenz Montano, Marcela',
+        class: 'WMAD Class of 2024',
+        website: 'https://marcelasaenz.com/'
+    }, 
     {
         name: 'Dorfman, Anastasia',
         class: 'WMAD Class of 2024',
