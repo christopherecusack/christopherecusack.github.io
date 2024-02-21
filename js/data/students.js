@@ -4,19 +4,15 @@ export const students = [
         class: 'GEX Class of 2024',
         website: 'https://herbertph.com/'
     }, {
-        name: 'Manuel Echeandia',
+        name: 'Echeandia, Manuel',
         class: 'WMAD Class of 2024',
         website: 'https://manuelecheandia.com/'
     }, {
-        name: 'Manuel Echeandia',
-        class: 'WMAD Class of 2024',
-        website: 'https://manuelecheandia.com/'
-    }, {
-        name: 'Catie Cserkuti',
+        name: 'Cserkuti, Catie',
         class: 'WMAD Class of 2024',
         website: 'https://www.linkedin.com/in/catie-cserkuti/'
     }, {
-        name: 'Anastasia Dorfman',
+        name: 'Dorfman, Anastasia',
         class: 'WMAD Class of 2024',
         website: 'https://anastasiadorfman.com/'
     }
