@@ -18,4 +18,10 @@ export const students = [
         class: 'WMAD Class of 2024',
         website: 'https://anastasiadorfman.com/'
     }
+    , 
+    {
+        name: 'Budd, Taylor',
+        class: 'WMAD Class of 2023',
+        website: 'https://taylorbudd.com/'
+    }
 ].sort((a, b) => a.name > b.name ? 1 : -1);
