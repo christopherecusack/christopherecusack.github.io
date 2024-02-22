@@ -5,6 +5,8 @@ export const init = () => {
     const audioButton = $('.header i.bx');
     const equaliser = $('.equaliser-container');
     const audio = $('#audio');
+    const speaker = $('#speaker');
+    let monitorScroll = false;
 
     if (!audioButton)
         return;
@@ -21,6 +23,7 @@ export const init = () => {
     document.addEventListener('click', musicPlay);
 
     function musicPlay() {
+        speaker.classList.toggle('hide');
         $('#audio').play();
         audioButton.classList.toggle('bx-volume-mute');
         equaliser.classList.toggle('hide');

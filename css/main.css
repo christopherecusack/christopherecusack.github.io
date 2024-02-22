@@ -693,7 +693,7 @@ section:nth-child(even) .animate.scroll,
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .skills-content-icons img {
