@@ -23,5 +23,9 @@ export const students = [
         name: 'Suarez, Manuel',
         class: 'Gaming Experience Class of 2024',
         website: 'https://manuelsuarez3d.com/'
+    }, {
+        name: 'Portella, Diego',
+        class: 'Gaming Experience Class of 2024',
+        website: 'https://diegoportella.com/'
     }
 ].sort((a, b) => a.name > b.name ? 1 : -1);
