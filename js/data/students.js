@@ -12,6 +12,10 @@ export const students = [
         class: 'Web &amp; Mobile Application Development Class of 2024',
         website: 'https://marcelasaenz.com/'
     }, {
+        name: 'Rahman, Mahfuzur',
+        class: 'Web &amp; Mobile Application Development Class of 2024',
+        website: 'https://mahfuzurr.com/'
+    }, {
         name: 'Dorfman, Anastasia',
         class: 'Web &amp; Mobile Application Development Class of 2024',
         website: 'https://anastasiadorfman.com/'
