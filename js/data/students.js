@@ -33,12 +33,16 @@ export const students = [
         website: 'https://diegoportella.com/'
     }, {
         name: 'Schriver, David',
-        class: 'Web &amp; Mobile Class of 2019', 
+        class: 'Web &amp; Mobile Class of 2019',
         website: 'https://schriverdj87.github.io/'
     }, {
         name: 'Cardeiro, Davis',
         class: 'Gaming Experience Class of 2024',
         website: 'https://digitalninjadev.ca/'
+    }, {
+        name: 'Komarov, Volodymyr',
+        class: 'Gaming Experience Class of 2024',
+        website: 'https://bobthegamebuilder.com/'
     },
 
 ].sort((a, b) => a.name > b.name ? 1 : -1);
