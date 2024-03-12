@@ -16,6 +16,10 @@ export const students = [
         class: 'Web &amp; Mobile Application Development Class of 2024',
         website: 'https://mahfuzurr.com/'
     }, {
+        name: 'Quintana, Pablo',
+        class: 'Web &amp; Mobile Application Development Class of 2024',
+        website: 'https://pabloquintana.info/'
+    }, {
         name: 'Dorfman, Anastasia',
         class: 'Web &amp; Mobile Application Development Class of 2024',
         website: 'https://anastasiadorfman.com/'
