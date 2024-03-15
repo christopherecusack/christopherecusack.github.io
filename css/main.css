@@ -61,11 +61,12 @@ body {
     align-items: center;
     z-index: 100;
     transition: .5s;
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
 .header.sticky {
     background: var(--bg-color);
+    
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
 .logo {
