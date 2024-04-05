@@ -35,6 +35,10 @@ export const students = [
         name: 'Portella, Diego',
         class: 'Gaming Experience Class of 2024',
         website: 'https://diegoportella.com/'
+    },{
+        name: 'Rodrigues, Aurelio',
+        class: 'Gaming Experience Class of 2024',
+        website: 'https://aureliorodrigues.com/'
     }, {
         name: 'Schriver, David',
         class: 'Web &amp; Mobile Class of 2019',
