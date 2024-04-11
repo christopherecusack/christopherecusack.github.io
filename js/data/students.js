@@ -35,7 +35,7 @@ export const students = [
         name: 'Portella, Diego',
         class: 'Gaming Experience Class of 2024',
         website: 'https://diegoportella.com/'
-    },{
+    }, {
         name: 'Rodrigues, Aurelio',
         class: 'Gaming Experience Class of 2024',
         website: 'https://aureliorodrigues.com/'
@@ -55,6 +55,14 @@ export const students = [
         name: 'Whynot, Peter',
         class: 'Web &amp; Mobile Application Development Class of 2024',
         website: 'https://peterwhynot.com/'
+    }, {
+        name: 'Lee, Tony',
+        class: 'Web &amp; Mobile Application Development Class of 2024',
+        website: 'https://codebytony.onrender.com/'
+    }, {
+        name: 'Medina La Rosa, Alicia',
+        class: 'Web &amp; Mobile Application Development Class of 2024',
+        website: 'https://aliciaprogramming.onrender.com/'
     },
 
 ].sort((a, b) => a.name > b.name ? 1 : -1);
