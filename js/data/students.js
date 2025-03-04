@@ -47,6 +47,10 @@ export const students = [
         name: 'Medina La Rosa, Alicia',
         class: 'Web &amp; Mobile Application Development Class of 2024',
         website: 'https://aliciaprogramming.onrender.com/'
+    }, {
+        name: 'Lovon, Jose',
+        class: 'Web &amp; Mobile Application Development Class of 2025',
+        website: 'https://joselovon-portfolio.onrender.com/'
     },
 
 ].sort((a, b) => a.name > b.name ? 1 : -1);
