@@ -65,7 +65,7 @@ body {
 
 .header.sticky {
     background: var(--bg-color);
-    
+
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
@@ -493,7 +493,6 @@ span {
     flex-direction: column;
     gap: 2rem;
     background-color: var(--bg-color);
-    padding-bottom: 6rem;
 }
 
 .contact form {
@@ -729,6 +728,18 @@ section:nth-child(even) .animate.scroll,
     cursor: pointer;
 }
 
+.calendly {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.calendly-logo {
+    margin-top: 20px;
+    width: 10%;
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -754,6 +765,10 @@ section:nth-child(even) .animate.scroll,
 
     .footer {
         padding: 2rem 4%;
+    }
+
+    .calendly-logo {
+        width: 25%;
     }
 }
 
@@ -869,6 +884,10 @@ section:nth-child(even) .animate.scroll,
     .home-sci a {
         width: 38px;
         height: 38px;
+    }
+
+    .calendly-logo {
+        width: 50%;
     }
 }
 
