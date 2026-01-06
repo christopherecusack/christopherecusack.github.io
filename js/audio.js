@@ -20,7 +20,8 @@ export const init = () => {
         musicMuted = !musicMuted;
     }
 
-    document.addEventListener('click', musicPlay);
+    // document.addEventListener('click', musicPlay);
+    musicPlay();
 
     function musicPlay() {
         speaker.classList.toggle('hide');
